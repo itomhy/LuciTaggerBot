@@ -24,25 +24,25 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**🌀LuciTaggerBot**\n ile Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
+  await event.reply("**🌀TaggerBot**\n ile Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
                     buttons=(
                    
-		      [Button.url('Beni Gruba Ekle ➕', 'https://t.me/lucitaggerbot?startgroup=a')],
-                      [Button.url('Support🛠', 'https://t.me/LuciSup')],
-                      [Button.url('Resmi Kanal📣', 'https://t.me/LuciBots')],
-		      [Button.url('Developer👨🏻‍💻', 'https://t.me/LuciMarka')],
+		      [Button.url('Qrupa Elave Et ➕', 'https://t.me/lucitaggerbot?startgroup=a')],
+                      [Button.url('Support🛠', 'https://t.me/itomhyy')],
+                      [Button.url('Resmi Kanal📣', 'https://t.me/itomhyblogs')],
+		      [Button.url('Developer👨🏻‍💻', 'https://t.me/itomhyy')],
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🌀 LuciTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/etag <sebeb> - Emoji ile etiketler**\n\n**/tektag sebeb - Üyeleri Tek Tek Etiketler**\n\n**/admins sebeb - Yöneticileri Tek Tek Tag Eder**\n\n**/start - botu başlatır**"
+  helptext = "**🌀 TaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/etag <sebeb> - Emoji ile etiketler**\n\n**/tektag sebeb - Üyeleri Tek Tek Etiketler**\n\n**/admins sebeb - Yöneticileri Tek Tek Tag Eder**\n\n**/start - botu başlatır**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Beni Gruba Ekle➕', 'https://t.me/lucitaggerbot?startgroup=a')],
-                      [Button.url('Support👨‍💻', 'https://t.me/LuciSup')],
-                      [Button.url('Resmi Kanal🔖', 'https://t.me/LuciBots')],
-		      [Button.url('Developer🧑‍🔧', 'https://t.me/LuciMarka')],
+                      [Button.url('Qrupa Elave Et ➕', 'https://t.me/lucitaggerbot?startgroup=a')],
+                      [Button.url('Support🛠', 'https://t.me/itomhyy')],
+                      [Button.url('Resmi Kanal📣', 'https://t.me/itomhyblogs')],
+		      [Button.url('Developer👨🏻‍💻', 'https://t.me/itomhyy')],
                     ),
                     link_preview=False
                    )
